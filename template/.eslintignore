@@ -1,0 +1,7 @@
+build/*.js
+config/*.js
+/src/styles/fonts/*.js
+/src/vendor/*.js
+/src/directives/touch.js
+/src/plugin/*.js
+/src/plugin/miniColor/*.js

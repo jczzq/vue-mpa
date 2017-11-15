@@ -1,0 +1,34 @@
+{
+    "pages": [{
+        "entry": "receive-coupons",
+        "path": "pages/receive-coupons",
+        "title": "领取券",
+        "cdn": {}
+    }, {
+        "entry": "sample",
+        "path": "pages/sample",
+        "title": "示例",
+        "cdn": {}
+    }, {
+        "entry": "business-regist",
+        "path": "pages/business-regist",
+        "title": "商户入驻",
+        "cdn": {}
+    }, {
+        "entry": "make-poster",
+        "path": "pages/make-poster",
+        "title": "制作海报",
+        "cdn": {}
+    }, {
+        "entry": "subscription-auth",
+        "path": "pages/subscription-auth",
+        "title": "推送授权",
+        "cdn": {}
+    }],
+    "basePath": "./src/",
+    "cdn": {
+        "js": [],
+        "css": []
+    },
+    "externals": {}
+}

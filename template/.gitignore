@@ -1,0 +1,9 @@
+*.log
+.cache
+.DS_Store
+.idea
+dist
+node_modules
+converage
+.npm-debug.log
+.project
