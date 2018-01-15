@@ -19,6 +19,7 @@ if (typeof Object.assign != 'function') {
     return target;
   };
 }
+
 if (!Array.prototype.includes) {
   Array.prototype.includes = function(searchElement /*, fromIndex*/ ) {
     'use strict';
@@ -90,6 +91,7 @@ if (!String.prototype.includes) {
     }
   };
 }
+
 Date.prototype.format = function (format) {
     var date = {
         "M+": this.getMonth() + 1,

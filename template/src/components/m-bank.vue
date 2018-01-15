@@ -14,7 +14,7 @@
                 </p>
                 <div class="rstItem" :class="{choose:item.code == value}" v-for="item in bankRstList" :key="item.code">
                     <p @click="chooseBank(item)">
-                        {{item.name}}
+                        
                     </p>
                 </div>
             </div>

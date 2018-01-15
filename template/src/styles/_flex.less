@@ -23,6 +23,12 @@
   align-items: @b;
   -webkit-align-items: @b;
 }
+[layout-align="space-between space-between"] {
+  .flex(space-between,space-between);
+}
+[layout-align="space-between space-around"] {
+  .flex(space-between,space-around)
+}
 [layout-align="space-between start"] {
   .flex(space-between,flex-start);
 }
@@ -35,14 +41,34 @@
 [layout-align="space-between stretch"] {
   .flex(space-between,stretch)
 }
+
+[layout-align="space-around space-between"] {
+  .flex(space-around,space-between)
+}
+[layout-align="space-around space-around"] {
+  .flex(space-around,space-around)
+}
 [layout-align="space-around center"] {
   .flex(space-around,center)
 }
 [layout-align="space-around stretch"] {
   .flex(space-around,stretch)
 }
+[layout-align="space-around start"] {
+  .flex(space-around,flex-start)
+}
+[layout-align="space-around end"] {
+  .flex(space-around,flex-start)
+}
+
 [layout-align="center center"] {
   .flex(center,center)
+}
+[layout-align="center space-between"] {
+  .flex(center,space-between)
+}
+[layout-align="center space-around"] {
+  .flex(center,space-around)
 }
 [layout-align="center start"] {
   .flex(center,flex-start)
@@ -50,9 +76,23 @@
 [layout-align="center end"] {
   .flex(center,flex-end)
 }
+
 [layout-align="end center"] {
   .flex(flex-end, center)
 }
+[layout-align="end start"] {
+  .flex(flex-end,start)
+}
+[layout-align="end end"] {
+  .flex(flex-end,flex-end)
+}
+[layout-align="end space-between"] {
+  .flex(end,space-between)
+}
+[layout-align="end space-around"] {
+  .flex(end,space-around)
+}
+
 [layout-align="start center"] {
   .flex(flex-start,center)
 }
@@ -62,15 +102,13 @@
 [layout-align="start end"] {
   .flex(flex-start,flex-end)
 }
-[layout-align="center space-around"] {
-  .flex(center,space-around)
+[layout-align="start space-between"] {
+  .flex(start,space-between)
 }
-[layout-align="space-around start"] {
-  .flex(space-around,flex-start)
+[layout-align="start space-around"] {
+  .flex(start,space-around)
 }
-[layout-align="end start"] {
-  .flex(flex-end,start)
-}
+
 .flex-percentge(@a){
   -webkit-flex: 1 1 @a;
   flex: 1 1 @a;

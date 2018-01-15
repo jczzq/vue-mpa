@@ -1,12 +1,8 @@
 // 全局样式定义
-@import './_mixins.less';
-@import './_agile.less';
 @import './_flex.less';
 
 html {
     font-family: PingFangSC-Regular, 'Microsoft Yahei', sans-serif;
-    line-height: 1.6;
-    background-color: @color-bg;
     color: #333;
     box-sizing: border-box;
     -webkit-user-select: none;
@@ -23,9 +19,10 @@ html {
 
 html,
 body {
-    width: 100%;
-    min-height: 100%;
+    width: 100vw;
+    min-height: 100vh;
     overflow-x: hidden;
+    font-size: 16px;
 }
 body,
 button,
@@ -70,73 +67,31 @@ button {
     font-family: PingFangSC-Regular, 'Microsoft Yahei', sans-serif;
 }
 a {
-    color: @color-primary;
+    color: #333;
     text-decoration: none;
 }
 
 img {
     width: 100%;
 }
-.text-right {
-    text-align: right;
-}
-.text-left {
-    text-align: left;
-}
-.text-center {
-    text-align: center;
-}
-.btn {
-    display: line-block;
-    text-align: center;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 2px;
-}
-.btn-block {
-    display: block;
-    padding: 7px;
-    box-sizing: content-box;
-    border: 1px solid @border-input;
-}
-.pull-right {
-    float: right;
-}
+
+// 淡入淡出
 .fade-enter-active, .fade-leave {
   transition: opacity .5s
 }
 .fade-enter, .fade-leave-active {
   opacity: 0
 }
-.toastStyle-1{
-    max-width:100% !important; width:100% !important; top:0 !important;
-}
 
-.img-loading{
-    transition: height .3s ease-in;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.51);
-    width: 100%;
-    height: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-}
 // 下出上入
 .slide-toggle-enter-active,
 .slide-toggle-leave-active {
     transition: all .3s ease;
 }
-
 .slide-toggle-enter {
     transform: translateY(-10px);
     opacity: 0;
 }
-
 .slide-toggle-leave-active {
     transform: translateY(10px);
     opacity: 0;
@@ -147,23 +102,21 @@ img {
 .slide-up-leave-active {
     transition: all .3s ease;
 }
-
 .slide-up-enter,
 .slide-up-leave-active {
     transform: translateY(-10px);
     opacity: 0;
 }
+
 // 左出右入
 .slide-left-enter-active,
 .slide-left-leave-active {
     transition: all .3s ease;
 }
-
 .slide-left-enter {
     transform: translateX(10px);
     opacity: 0;
 }
-
 .slide-left-leave-active {
     transform: translateX(-10px);
     opacity: 0;
@@ -174,21 +127,11 @@ img {
 .slide-right-leave-active {
     transition: all .3s ease;
 }
-
 .slide-right-enter {
     transform: translateX(-10px);
     opacity: 0;
 }
-
 .slide-right-leave-active {
     transform: translateX(10px);
     opacity: 0;
-}
-.radio-block {
-    height: 16px; 
-    min-width: 50px; 
-    text-align: right;
-}
-.mwd-50 {
-    min-width: 100px;
 }

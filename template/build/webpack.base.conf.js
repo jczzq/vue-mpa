@@ -33,8 +33,7 @@ module.exports = {
       'store': resolve('src/store'),
       'plugin': resolve('src/plugin'),
       'routers': resolve('src/routers'),
-      'jquery': 'jquery',
-      'muse-components': 'muse-ui/src'
+      'jquery': 'jquery'
     }
   },
   module: {

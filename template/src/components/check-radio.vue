@@ -6,7 +6,7 @@
          <div v-else>
             <span class="checkbox-core" :class="{select:(currentValue&&currentValue.findIndex(function(value) {return value.value==option.value;})!=-1),isCheck:check}"></span>
         </div>
-        <div >&nbsp;{{option.name}}</div>
+        <div >&nbsp;</div>
     </div>
 </template>
 <script>

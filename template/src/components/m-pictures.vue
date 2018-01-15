@@ -27,7 +27,7 @@
                 <svg class="icon" aria-hidden="true">  <use xlink:href="#icon-add"></use>  </svg>
                 传图片
             </span>
-            <span>{{pictures.length}} / {{maxCount}}张</span>
+            <span> / 张</span>
         </p>-->
     </div>
 </template>
